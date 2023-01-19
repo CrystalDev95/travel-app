@@ -50,12 +50,12 @@
         align-items: stretch;
         justify-content: center;
         margin: auto;
-        color: var(--whiteColor);
         z-index: 100;
     }
 
     .textDiv {
         padding: 2rem 0;
+        color: var(--whiteColor);
 
         .smallText{
             font-size: 13px;
@@ -82,14 +82,14 @@
             font-size: 13px;
             font-weight: 500;
         }
-        .label-total {
-            justify-content: center;
+        .label_total {
+            justify-content: space-between;
             align-items: center;
 
             .total {
-                color: var(--whiteColor);
                 font-size: 18px;
                 padding-bottom: 10px;
+                color: var(--textColor);
             }
         }
 
@@ -126,10 +126,11 @@
         .searchOptions {
             position: absolute;
             background: var(--gradientColor);
+            color: var(--whiteColor);
             width: max-content;
-            bottom: -0.7rem;
+            bottom: -1.4rem;
             column-gap: .8rem;
-            padding: 5px 1rem;
+            padding: 10px 1rem;
             border-radius: 3rem;
             left: 50%;
             transform: translate(-50%);
@@ -146,6 +147,21 @@
 
             span {
                 font-size: 13px;
+            }
+        }
+    }
+
+    .homeFooterIcons {
+        width: 100%;
+        justify-content: space-between;
+
+        .icon {
+            font-size: 20px;
+            margin: 0 5px;
+            color: var(--whiteColor);
+            font-weight: 600;
+            &:hover {
+                color: var(--primaryColor);
             }
         }
     }
